@@ -16,7 +16,7 @@ public class TestLinkedList extends SpeedTest {
 
     @Override
     @Setup(Level.Invocation)
-    public void arrayList() {
+    public void createList() {
         for (int i = 0; i < 100000; i++) {
             list.add("test".concat(String.valueOf(i)));
         }

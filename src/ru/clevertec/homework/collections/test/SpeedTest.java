@@ -13,7 +13,7 @@ public abstract class SpeedTest {
         this.list = list;
     }
 
-    abstract public void arrayList();
+    abstract public void createList();
 
     @Benchmark
     public void addFirst() {
