@@ -11,13 +11,6 @@ join product p on pi.product_id = p.id
 where check_id = 1;
 
 -- Написать запрос с группировкой данных и последующей фильтрацией
-select name,p.price, count(check_Id) count,sum(c.total_price) price
-from cash_register.public."check" c
-join product_information pi on c.id = pi.check_id
-join product p on pi.product_id = p.id
-group by name,p.price;
-
--- Написать запрос с группировкой данных и последующей фильтрацией
 select product_id, count(check_Id) amount_of_deals,sum(total_price) total_price
 from product_information
 group by product_id
